@@ -15,7 +15,7 @@ For details, see the
 
 To use this code, do the following:
 1. Create your own CS 262 code repo on GitHub:
-```https://github.com/GIT_ID/cs262```
+```https://github.com/```***GITHUB_ID***```/cs262```
 2. Clone this quick-start repo to your local machine.
 3. Add a second git remote to this new local copy pointing to your new
 CS 262 repo and then commit/push this code to your new GitHub CS 262
