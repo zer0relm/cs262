@@ -1,8 +1,17 @@
-### CS 262 - Software Engineering Code - Calvin College
+## CS 262 - Software Engineering Code
 
 This set of quick-start applications is distributed for use by students
 of [CS 262 at Calvin College](https://cs.calvin.edu/courses/cs/262).
-The applications are built with either Android Studio or Intellij IDEA.
+The applications include:
+
+- examples of Android Applications implemented using Java in Android Studio.
+- an example of a REST interface to a PostgreSQL database implemented
+using the Google Cloud Platform in Intellij IDEA.
+
+For details, see the
+[course schedule](https://cs.calvin.edu/courses/cs/262/kvlinden/schedule.html).
+
+### Getting Started
 
 To use this code, do the following:
 1. Create your own CS 262 code repo on GitHub:
