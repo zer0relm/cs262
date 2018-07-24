@@ -43,7 +43,8 @@ public class PlayerResource {
 
     /**
      * GET
-     * This method gets the full list of players from the Player table.
+     * This method gets the full list of players from the Player table. It uses JDBC to
+     * establish a DB connection, construct/send a simple SQL query, and process the results.
      *
      * @return JSON-formatted list of player records (based on a root JSON tag of "items")
      * @throws SQLException
