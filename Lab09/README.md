@@ -6,7 +6,7 @@ AppEngine and Cloud SQL.
 The domain of application is the Monopoly database and only the read 
 players API endpoint is implemented. 
 
-#### Deployment Instructions
+### Deployment Instructions
 
 See the code for detailed descriptions of the functionality; to install
 and configure the system, do the following.
