@@ -2,9 +2,10 @@
 
 This set of quick-start applications is distributed for use by students
 of [CS 262 at Calvin College](https://cs.calvin.edu/courses/cs/262).
-The applications include:
+The applications can include:
 
-- examples of Android Applications implemented using Java in Android Studio.
+- examples of Android Applications implemented using Java in Android Studio;
+- SQL commands;
 - an example of a REST interface to a PostgreSQL database implemented
 using the Google Cloud Platform in Intellij IDEA.
 
@@ -14,14 +15,14 @@ For details, see the
 ### Getting Started
 
 To use this code, do the following:
-1. Create your own CS 262 code repo on GitHub:
-```https://github.com/GITHUB_ID/cs262```
-2. Clone this quick-start repo to your local machine.
-3. Add a second git remote to this new local copy pointing to your new
-CS 262 repo and then commit/push this code to your new GitHub CS 262
-repo. For details on this process, see
-[Git Basics - Working with Remotes](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes).
+1. Clone this `cs262-code` repo to your local machine and use it as a reference
+    as you develop your own solution code.
+2. Create your own CS 262 code repo on GitHub:
+```https://github.com/GITHUB_ID/cs262```. You can do this by:
+    1. Creating a new `cs262` repo on GitHub.
+    2. Cloning that repo to your local machine (or machines) as a sibling of your `cs262-code` repo.
+    3. Adding/Committing/Pushing your solution files.
 
-You will generally work with this initial copy in your own repo.
-If we make changes to this quick-start code, we will let you know what's
-changed so that you can pull/merge those changes into your own code.
+You will push your own `cs262` repo weekly, as appropriate.
+You should pull updates to the `cs262-code` repo regularly;
+we'll let you know if we make major changes.

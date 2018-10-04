@@ -3,13 +3,13 @@ integrates a Cloud SQL (Postgresql) database with an Endpoints REST
 API. It is deployed to a Google Cloud project that has resources for
 AppEngine and Cloud SQL. 
 
-The domain of application is the Monopoly database and only the read 
-players API endpoint is implemented. 
+The domain of application is the Monopoly database and only the read-players
+API endpoint is implemented.
 
 ### Deployment Instructions
 
 See the code for detailed descriptions of the functionality; to install
-and configure the system, do the following.
+and configure the cloud service, do the following.
 
 1. Create a new Google App Engine Project according to these instructions:
 [Quickstart for Java 8 for App Engine Standard Environment](https://cloud.google.com/appengine/docs/standard/java/quickstart).
@@ -23,8 +23,7 @@ Note the following for each section of the tutorial:
     modify the URI appropriately for this deployment to work. Access only the
     hello-world endpoint; you haven&rsquo;t created an SQL service yet.
     - *Deploying and running Hello World on App Engine* &mdash; Modify the URI
-    again. Remember to disable and/or delete your application when it is no longer
-    needed to ensure that you don&rsquo;t use up your Google credits.
+    again.
 
 2. Create a new CloudSQL instance for your new application according to
 these instructions:
