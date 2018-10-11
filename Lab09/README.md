@@ -31,7 +31,7 @@ these instructions:
 (and Google&rsquo;s [sample code repo](https://github.com/GoogleCloudPlatform/java-docs-samples/tree/master/appengine-java8/cloudsql-postgres)).
 Note the following for each section of the tutorial:
     - *Before you begin* &mdash; You&rsquo;ve already done this.
-    - *Setting up the Cloud SQL instance* &mdash; *Do as written.*
+    - *Setting up the Cloud SQL instance* &mdash; *Do as written (for a PostgreSQL Development instance).*
     - *Granting access to App Engine* &mdash; Skip this step; your CloudSQL is
     built into the same application.
     - *Testing in your development environment* &mdash; There is a 
@@ -39,7 +39,7 @@ Note the following for each section of the tutorial:
     in the Cloud SDK socket factory that prevents it from working locally.
     The work around is to do code development in IDEA and Google Cloud
     project builds and deploys using the Google Cloud SDK shell. Note that 
-    each re-deploy creates a backup version of the system that should be deleted
+    each re-deploy creates a backup version of the system that you should delete
     to save money.
     - *Deploying your app* &mdash; *Do as written.*
 
@@ -57,7 +57,7 @@ Note the following for each section of the tutorial:
     - *Deploying the API backend* &mdash; *Do as written.*
     - *Sending a request to the API* &mdash; *Do as written.* 
     - *Tracking API activity* &mdash; This is optional.
-    - *Clean up* &mdash; Only do this after the lab/homework are graded.
+    - *Clean up* &mdash; Only do this after the lab &amp; homework are graded.
 
 The Google Cloud application/database incur charges when active, and we have limited grant money
 to fund our individual assignment and team project development. To cut costs, manually shut the 
@@ -65,8 +65,11 @@ system down when not in use by:
 
 - Disabling the AppEngine instance (Dashboard-AppEngine-Settings-Disable)
 - Stopping the SQL instance (Dashboard-SQL-Stop)
+- Deleting backup copies of the application (see above)
 
 The system can be restarted by reversing these two actions. Note that it
 takes a few minutes for the system to become fully active again.
-Note that even a disabled project costs ~$1/day. Delete the project
-entirely when it has be graded (of course, keep the source code in your repo).
+Note also that even a disabled project costs ~$1/day. Delete the project
+entirely when it has been graded. Of course, keep the source code in your repo
+so that you can both rebuild as needed and refer to it as a model for your
+project service.
