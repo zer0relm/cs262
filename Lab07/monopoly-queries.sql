@@ -1,7 +1,7 @@
 -- Lists the game records in chronological order.
 SELECT * 
 FROM Game
-ORDER BY startTime;
+ORDER BY time;
 
 -- The WHERE clause is optional.
 SELECT * 
