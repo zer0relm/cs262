@@ -85,7 +85,8 @@ Note the following for each section of the tutorial:
         - This should create the monopoly DB for testing.
             Try some SELECT commands to verify that it's there.
         - Eventually, you'll delete these tables and replace them with your
-            team project database tables.
+            team project database tables, but we suggest that you get the
+            Monopoly service running first as a baseline.
 
 3. Create a new CloudEndpoints API for your new application according to
 these instructions:
@@ -114,18 +115,21 @@ Note the following for each section of the tutorial:
         - Do this only do this after the project is complete and the
             course grades submitted.
 
+This new, baseline Monopoly DB should support the same features as the sample
+service used for homework 2. When you've confirmed that it does, you can update
+the code to support your project database.
+
 The Google Cloud application/database incur charges when active, and we
-have limited grant money to fund our individual assignment and team
-project development. To cut costs, you should delete legacy
-versions of the application, which get created every time you
-(re)deploy the application. You can also manually shut the system down
-when not in use by:
+have limited grant money to fund our project development. To cut costs,
+you should delete legacy versions of the application, which are created
+every time you (re)deploy the application. You can also manually shut the
+system down when not in use by:
 
 - Disabling the AppEngine instance (Dashboard-AppEngine-Settings-Disable)
 - Stopping the SQL instance (Dashboard-SQL-Stop)
 
-The system can be restarted by reversing these two actions. Note that it
-takes a few minutes for the system to become fully active again.
-Note also that even a disabled project costs ~$1/day. Delete the cloud
-project entirely when the course grades are submitted. Of course, keep
-the source code in your repo so that you can rebuild if needed.
+The system can be restarted by reversing these two actions.
+Note that even a disabled project costs ~$1/day. Delete the cloud
+project entirely when the course grades are submitted. You should,
+of course, keep the source code in your repo so that you can rebuild
+it later if needed.

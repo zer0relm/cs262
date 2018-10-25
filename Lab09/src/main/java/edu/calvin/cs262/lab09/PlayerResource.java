@@ -45,9 +45,9 @@ import static com.google.api.server.spi.config.ApiMethod.HttpMethod.DELETE;
 
 /**
  * This class implements a RESTful service for the player table of the monopoly database.
- * Only the player relation is supported, not the game or playergame relations.
+ * Only the player table is supported, not the game or playergame tables.
  *
- * You can test the GET endpoints using a standard browser.
+ * You can test the GET endpoints using a standard browser or cURL.
  *
  * % curl --request GET \
  *    https://calvincs262-monopoly.appspot.com/monopoly/v1/players
