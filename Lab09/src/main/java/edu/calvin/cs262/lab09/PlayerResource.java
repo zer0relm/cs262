@@ -46,6 +46,34 @@ import static com.google.api.server.spi.config.ApiMethod.HttpMethod.DELETE;
 /**
  * This class implements a RESTful service for the player table of the monopoly database.
  * Only the player relation is supported, not the game or playergame relations.
+ *
+ * You can test the GET endpoints using a standard browser.
+ *
+ * % curl --request GET \
+ *    https://calvincs262-monopoly.appspot.com/monopoly/v1/players
+ *
+ * % curl --request GET \
+ *    https://calvincs262-monopoly.appspot.com/monopoly/v1/player/1
+ *
+ * You can test the full REST API using the following sequence of cURL commands (on Linux):
+ * (Run get-players between each command to see the results.)
+ *
+ * // Add a new player (probably as unique generated ID #4).
+ * % curl --request POST \
+ *    --header "Content-Type: application/json" \
+ *    --data '{"name":"test name...", "emailAddress":"test email..."}' \
+ *    https://calvincs262-monopoly.appspot.com/monopoly/v1/player
+ *
+ * // Edit the new player (assuming ID #4).
+ * % curl --request PUT \
+ *    --header "Content-Type: application/json" \
+ *    --data '{"name":"new test name...", "emailAddress":"new test email..."}' \
+ *    https://calvincs262-monopoly.appspot.com/monopoly/v1/player/4
+ *
+ * // Delete the new player (assuming ID #4).
+ * % curl --request DELETE \
+ *    https://calvincs262-monopoly.appspot.com/monopoly/v1/player/4
+ *
  */
 public class PlayerResource {
 
