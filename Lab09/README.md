@@ -60,10 +60,10 @@ Note the following for each section of the tutorial:
         2. Steps 2&ndash;3 &mdash; You can skip these; you've just done them.
         3. Step 4 &mdash; Do this one as a sanity check.
         4. Step 5 &mdash; Skip this; it's done automatically.
-        5. Step 6 &mdash: Edit the `pom.xml` as specified here,
+        5. Step 6 &mdash; Edit the `pom.xml` as specified here,
             replacing the `LAB09-YOUR-*` entries as appropriate.
         6. Steps 7&ndash;8 &mdash; Skip these;
-            this is already included in the lab 9 code.
+            this is already included in the lab 9 code.             `
     - *Granting access to App Engine*
         - Skip this step; your CloudSQL is built into the same application.
     - *Code sample overview*
@@ -81,7 +81,7 @@ Note the following for each section of the tutorial:
     - Finally, load the sample monopoly database as a test case.
         - On the SQL dashboard overview page, choose "Connect using Cloud Shell".
         - Login to your new PostgreSQL database instance.
-        - Paste the `monopoly.sql` script from lab 7 into the commandline.
+        - Paste the `monopoly.sql` script from lab 7 into the command-line.
         - This should create the monopoly DB for testing.
             Try some SELECT commands to verify that it's there.
         - Eventually, you'll delete these tables and replace them with your
@@ -140,9 +140,11 @@ To re-deploy this code for your own database, you must generally do a
 search through the full project (not including the derived code in
 `target/` for all code configured for "homework03", "monopoly" or
 "player", and to re-configure it for your own relational table.
-This will involve:
+This requires that you:
 
-- Updating `pom.xml` appropriately.
-- Changing the package path names.
-- Building a new version of the Player and PlayerResource classes.
-- Updating `src/main/webapp/WEB-INF/web.xml`.
+- Update `pom.xml` appropriately.
+- Change the package path names.
+- Build a new version of the Player and PlayerResource classes.
+    While doing this, you should edit the `@ApiNamespace` appropriately,
+    but you don&rsquo;t need to set the `@ApiIssuer`.
+- Update `src/main/webapp/WEB-INF/web.xml`.
