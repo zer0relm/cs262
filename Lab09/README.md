@@ -7,7 +7,7 @@ The domain of application is the Monopoly database. Only the players
 API endpoints are implemented. See the code for detailed descriptions
 of the functionality.
 
-### Deployment Instructions
+## Deployment Instructions
 
 To install and configure the cloud service, do the following.
 
@@ -133,3 +133,16 @@ Note that even a disabled project costs ~$1/day. Delete the cloud
 project entirely when the course grades are submitted. You should,
 of course, keep the source code in your repo so that you can rebuild
 it later if needed.
+
+## Re-Deployment Instructions
+
+To re-deploy this code for your own database, you must generally do a
+search through the full project (not including the derived code in
+`target/` for all code configured for "homework03", "monopoly" or
+"player", and to re-configure it for your own relational table.
+This will involve:
+
+- Updating `pom.xml` appropriately.
+- Changing the package path names.
+- Building a new version of the Player and PlayerResource classes.
+- Updating `src/main/webapp/WEB-INF/web.xml`.
