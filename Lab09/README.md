@@ -139,7 +139,7 @@ it later if needed.
 To re-deploy this code for your own database, you must generally do a
 search through the full project (not including the derived code in
 `target/` for all code configured for "homework03", "monopoly" or
-"player", and to re-configure it for your own relational table.
+"player", and to re-configure it for your own relational table (or tables).
 This requires that you:
 
 - Update `pom.xml` appropriately.
