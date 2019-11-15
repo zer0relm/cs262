@@ -4,10 +4,9 @@ This set of quick-start applications is distributed for use by students
 of [CS 262 at Calvin College](https://cs.calvin.edu/courses/cs/262).
 The applications can include:
 
-- examples of Android Applications implemented using Java in Android Studio;
-- SQL commands;
-- an example of a REST interface to a PostgreSQL database implemented
-using the Google Cloud Platform in Intellij IDEA.
+- examples of Android Applications implemented using Java in Android Studio
+- SQL commands
+- examples of GitHub issues, & pull requests
 
 For details, see the
 [course schedule](https://cs.calvin.edu/courses/cs/262/kvlinden/schedule.html).
