@@ -23,5 +23,5 @@ To use this code, do the following:
     3. Adding/Committing/Pushing your solution files.
 
 You will push your own `cs262` repo weekly, as appropriate.
-You should pull updates to the `cs262-code` repo regularly;
-we'll let you know if we make major changes.
+You should pull updates from the `cs262-code` repo regularly to pick any changes 
+we may make.
