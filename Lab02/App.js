@@ -14,6 +14,8 @@ export default function App() {
     setBirthday(birthday.concat({key: newAge.toString()}))
     
   }
+
+  
   return (
     <View style={styles.container}>
       <Text>Enter your Name:</Text>
