@@ -19,7 +19,7 @@ SELECT PlayerID
 
 SELECT *
     FROM Player
-    WHERE emailAddress LIKE %gmail%
+    WHERE emailAddress LIKE '%gmail%'
     ;
 
 SELECT Score
@@ -28,3 +28,12 @@ SELECT Score
         AND Player.name = 'The King'
     ORDER BY PlayerGame.Score DESC
 ;
+
+-- SELECT name
+--     FROM Player, PlayerGame, Game
+--     WHERE PlayerGame.gameID = Game.ID 
+--       AND PlayerGame.playerID = Player.ID
+--       AND Game.time = '2006-06-28 13:20:00'
+--     ORDER BY PlayerGame.score DESC
+--     LIMIT 1
+--     ;
