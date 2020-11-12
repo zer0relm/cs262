@@ -1,3 +1,5 @@
+-- Single-Table Queries
+
 SELECT *
     FROM Game
     ORDER BY time DESC
@@ -22,6 +24,8 @@ SELECT *
     WHERE emailAddress LIKE '%gmail%'
     ;
 
+-- Multi-Table Queries
+
 SELECT Score
     FROM Player, PlayerGame
     Where Player.ID = PlayerGame.playerID
@@ -29,11 +33,14 @@ SELECT Score
     ORDER BY PlayerGame.Score DESC
 ;
 
--- SELECT name
---     FROM Player, PlayerGame, Game
---     WHERE PlayerGame.gameID = Game.ID 
---       AND PlayerGame.playerID = Player.ID
---       AND Game.time = '2006-06-28 13:20:00'
---     ORDER BY PlayerGame.score DESC
---     LIMIT 1
---     ;
+SELECT name
+    FROM Player, PlayerGame, Game
+    WHERE PlayerGame.gameID = Game.ID 
+      AND PlayerGame.playerID = Player.ID
+      AND Game.time = '2006-06-28 13:20:00'
+    ORDER BY PlayerGame.score DESC
+    LIMIT 1
+    ;
+-- Only returns queries where the ID of the first player is smaller than
+--      that of the second player
+
